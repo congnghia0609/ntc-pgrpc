@@ -4,7 +4,6 @@
 """
 import logging
 import time
-
 import grpc
 from ngrpc import calculator_pb2
 from ngrpc import calculator_pb2_grpc

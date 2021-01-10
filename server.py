@@ -4,10 +4,8 @@
 """
 import logging
 import time
-from concurrent import futures
-
 import grpc
-
+from concurrent import futures
 from ngrpc import calculator_pb2
 from ngrpc import calculator_pb2_grpc
 
