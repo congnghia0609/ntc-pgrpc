@@ -14,6 +14,14 @@ server:
 client:
 	@python client.py
 
+.PHONY: async_server
+async_server:
+	@python async_server.py
+
+.PHONY: async_client
+async_client:
+	@python async_client.py
+
 .PHONY: ssl
 ssl:
 	@cd ./ssl; ./gen_ssl.sh; cd ..;
