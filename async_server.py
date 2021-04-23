@@ -15,7 +15,7 @@ from typing import AsyncIterable, Iterable
 class CalculatorService(calculator_pb2_grpc.CalculatorServiceServicer):
     async def Sum(self, request: calculator_pb2.SumRequest, context) -> calculator_pb2.SumResponse:
         print("Sum called...")
-        return calculator_pb2.SumResponse(result=request.num1+request.num2)
+        return calculator_pb2.SumResponse(result=request.num1 + request.num2)
 
     async def PrimeNumberDecomposition(self, request: calculator_pb2.PNDRequest, context
                                        ) -> AsyncIterable[calculator_pb2.PNDResponse]:
@@ -44,7 +44,7 @@ class CalculatorService(calculator_pb2_grpc.CalculatorServiceServicer):
         return calculator_pb2.AverageResponse(result=total / count)
 
     async def FindMax(self, request_iterator: AsyncIterable[calculator_pb2.FindMaxRequest], context
-                ) -> AsyncIterable[calculator_pb2.FindMaxResponse]:
+                      ) -> AsyncIterable[calculator_pb2.FindMaxResponse]:
         print("FindMax called...")
         max = 0
         async for req in request_iterator:

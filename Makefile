@@ -1,5 +1,5 @@
-# Author:       nghiatc
-# Email:        congnghia0609@gmail.com
+# Author: nghiatc
+# Since: 09/01/2021
 
 
 .PHONY: gen
