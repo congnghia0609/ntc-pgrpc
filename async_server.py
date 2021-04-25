@@ -9,7 +9,7 @@ import grpc
 from concurrent import futures
 from ngrpc import calculator_pb2
 from ngrpc import calculator_pb2_grpc
-from typing import AsyncIterable, Iterable
+from typing import AsyncIterable
 
 
 class CalculatorService(calculator_pb2_grpc.CalculatorServiceServicer):
